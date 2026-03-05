@@ -1,0 +1,1774 @@
+fileFormatVersion: 2
+guid: 1c0f5dd7fed709d4e89176d1bbb1591d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8800986079511874828
+    second: voiddrop_spawn_0
+  - first:
+      213: -1002612049550198282
+    second: voiddrop_spawn_1
+  - first:
+      213: -3866935625894462191
+    second: voiddrop_spawn_2
+  - first:
+      213: 8209132241719828727
+    second: voiddrop_spawn_3
+  - first:
+      213: 3725609052762981880
+    second: voiddrop_spawn_4
+  - first:
+      213: 5574743418009284462
+    second: voiddrop_spawn_5
+  - first:
+      213: 7575340371690668636
+    second: voiddrop_spawn_6
+  - first:
+      213: -9068141108727543071
+    second: voiddrop_spawn_7
+  - first:
+      213: 8145917107237192305
+    second: voiddrop_spawn_8
+  - first:
+      213: 7540403587115913223
+    second: voiddrop_spawn_9
+  - first:
+      213: -5221693854112232923
+    second: voiddrop_spawn_10
+  - first:
+      213: -6258981593606724202
+    second: voiddrop_spawn_11
+  - first:
+      213: -5451942913183129327
+    second: voiddrop_spawn_12
+  - first:
+      213: -4770588991044500098
+    second: voiddrop_spawn_13
+  - first:
+      213: -2816017069237655756
+    second: voiddrop_spawn_14
+  - first:
+      213: -8495305301414594308
+    second: voiddrop_spawn_15
+  - first:
+      213: 6283246146972709920
+    second: voiddrop_spawn_16
+  - first:
+      213: 389982669946689472
+    second: voiddrop_spawn_17
+  - first:
+      213: 2664991722738522944
+    second: voiddrop_spawn_18
+  - first:
+      213: -6562811576450160459
+    second: voiddrop_spawn_19
+  - first:
+      213: -2149948673768228771
+    second: voiddrop_spawn_20
+  - first:
+      213: -2927774780725274592
+    second: voiddrop_spawn_21
+  - first:
+      213: -4343682935773116757
+    second: voiddrop_spawn_22
+  - first:
+      213: -4728438857750242442
+    second: voiddrop_spawn_23
+  - first:
+      213: -4421034143484932818
+    second: voiddrop_spawn_24
+  - first:
+      213: -1174472951858677084
+    second: voiddrop_spawn_25
+  - first:
+      213: -5102989301101827055
+    second: voiddrop_spawn_26
+  - first:
+      213: -5064722363508147368
+    second: voiddrop_spawn_27
+  - first:
+      213: -7434729653350478054
+    second: voiddrop_spawn_28
+  - first:
+      213: 6535901687067211824
+    second: voiddrop_spawn_29
+  - first:
+      213: -1949276105546490941
+    second: voiddrop_spawn_30
+  - first:
+      213: -454852714873962316
+    second: voiddrop_spawn_31
+  - first:
+      213: 2784276070003862022
+    second: voiddrop_spawn_32
+  - first:
+      213: -5805956661804375517
+    second: voiddrop_spawn_33
+  - first:
+      213: -5943289957362975217
+    second: voiddrop_spawn_34
+  - first:
+      213: -5325471476465944160
+    second: voiddrop_spawn_35
+  - first:
+      213: -3047727110822852055
+    second: voiddrop_spawn_36
+  - first:
+      213: 4529320689131015700
+    second: voiddrop_spawn_37
+  - first:
+      213: 8576544294861503362
+    second: voiddrop_spawn_38
+  - first:
+      213: 5658393129988401328
+    second: voiddrop_spawn_39
+  - first:
+      213: -925267814871756453
+    second: voiddrop_spawn_40
+  - first:
+      213: -2033775951865195586
+    second: voiddrop_spawn_41
+  - first:
+      213: 905325667562339802
+    second: voiddrop_spawn_42
+  - first:
+      213: -6508100476458196931
+    second: voiddrop_spawn_43
+  - first:
+      213: -1137632685731778454
+    second: voiddrop_spawn_44
+  - first:
+      213: 1316480946632913443
+    second: voiddrop_spawn_45
+  - first:
+      213: 509957835194417944
+    second: voiddrop_spawn_46
+  - first:
+      213: -5788753952181987858
+    second: voiddrop_spawn_47
+  - first:
+      213: 1993368529347352237
+    second: voiddrop_spawn_48
+  - first:
+      213: -5171936464355415583
+    second: voiddrop_spawn_49
+  - first:
+      213: 1411838059484878454
+    second: voiddrop_spawn_50
+  - first:
+      213: -5193824356960885838
+    second: voiddrop_spawn_51
+  - first:
+      213: 1358816108779544533
+    second: voiddrop_spawn_52
+  - first:
+      213: 8507997594197361331
+    second: voiddrop_spawn_53
+  - first:
+      213: -3957104087016023811
+    second: voiddrop_spawn_54
+  - first:
+      213: 7224374388533433430
+    second: voiddrop_spawn_55
+  - first:
+      213: -3067970402415050482
+    second: voiddrop_spawn_56
+  - first:
+      213: 3278167498248204929
+    second: voiddrop_spawn_57
+  - first:
+      213: -1299620130516026349
+    second: voiddrop_spawn_58
+  - first:
+      213: 8487394365448004251
+    second: voiddrop_spawn_59
+  - first:
+      213: -162524238618819300
+    second: voiddrop_spawn_60
+  - first:
+      213: -126970278717054215
+    second: voiddrop_spawn_61
+  - first:
+      213: 5681268191497864742
+    second: voiddrop_spawn_62
+  - first:
+      213: -242581009218221579
+    second: voiddrop_spawn_63
+  - first:
+      213: 6466423482686150004
+    second: voiddrop_spawn_64
+  - first:
+      213: 5992447789698314987
+    second: voiddrop_spawn_65
+  - first:
+      213: -7709258234121028306
+    second: voiddrop_spawn_66
+  - first:
+      213: -4589021043032145630
+    second: voiddrop_spawn_67
+  - first:
+      213: -689169238377257931
+    second: voiddrop_spawn_68
+  - first:
+      213: 6477493239366117442
+    second: voiddrop_spawn_69
+  - first:
+      213: -6024484668228005247
+    second: voiddrop_spawn_70
+  - first:
+      213: 757032980155212425
+    second: voiddrop_spawn_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: voiddrop_spawn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f279815acd9cd580800000000000000
+      internalID: -8800986079511874828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9b80b27a10612f0800000000000000
+      internalID: -1002612049550198282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11df1414982e55ac0800000000000000
+      internalID: -3866935625894462191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0aaeda742bce170800000000000000
+      internalID: 8209132241719828727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5cae1c1b504b330800000000000000
+      internalID: 3725609052762981880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fe3683a977d5d40800000000000000
+      internalID: 5574743418009284462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c524c43aee3012960800000000000000
+      internalID: 7575340371690668636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_7
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3010
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea8d29e4bd772280800000000000000
+      internalID: -9068141108727543071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17286aa337c1c0170800000000000000
+      internalID: 8145917107237192305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70010299c15e4a860800000000000000
+      internalID: 7540403587115913223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52acccbfa11d887b0800000000000000
+      internalID: -5221693854112232923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695ec51f661a329a0800000000000000
+      internalID: -6258981593606724202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111e20c5ecec654b0800000000000000
+      internalID: -5451942913183129327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75476b96967bcdb0800000000000000
+      internalID: -4770588991044500098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43727aa356f7be8d0800000000000000
+      internalID: -2816017069237655756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_15
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2580
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8b0b2a6dc9a1a80800000000000000
+      internalID: -8495305301414594308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02476a2a413923750800000000000000
+      internalID: 6283246146972709920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c71bbe0c2f796500800000000000000
+      internalID: 389982669946689472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b9f232ad3fbf420800000000000000
+      internalID: 2664991722738522944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8edd974a53ce4a0800000000000000
+      internalID: -6562811576450160459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58f8b67219d922e0800000000000000
+      internalID: -2149948673768228771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_21
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028d58459547e57d0800000000000000
+      internalID: -2927774780725274592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6415c326328b3c0800000000000000
+      internalID: -4343682935773116757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_23
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2150
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b94a549e5316eb0800000000000000
+      internalID: -4728438857750242442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d05b1ced455a2c0800000000000000
+      internalID: -4421034143484932818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aab82aa21f63bfe0800000000000000
+      internalID: -1174472951858677084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ce437744a8e29b0800000000000000
+      internalID: -5102989301101827055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_27
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bbe1d28dd76b9b0800000000000000
+      internalID: -5064722363508147368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_28
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f4bfa65c882d890800000000000000
+      internalID: -7434729653350478054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_29
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0387488a4ff24ba50800000000000000
+      internalID: 6535901687067211824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_30
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb9ebfa5b7c2f4e0800000000000000
+      internalID: -1949276105546490941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_31
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1720
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0c0d0add900b9f0800000000000000
+      internalID: -454852714873962316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a633d755cb3a620800000000000000
+      internalID: 2784276070003862022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32266d76d291d6fa0800000000000000
+      internalID: -5805956661804375517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ebb3ec541358da0800000000000000
+      internalID: -5943289957362975217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_35
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9b5cf58ef1816b0800000000000000
+      internalID: -5325471476465944160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_36
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a831b175c44b5d0800000000000000
+      internalID: -3047727110822852055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_37
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e4b7d5b216bde30800000000000000
+      internalID: 4529320689131015700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_38
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b7f9f7891060770800000000000000
+      internalID: 8576544294861503362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_39
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1290
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b828708296a68e40800000000000000
+      internalID: 5658393129988401328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51977c13d9c823f0800000000000000
+      internalID: -925267814871756453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_41
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3d7541c8396c3e0800000000000000
+      internalID: -2033775951865195586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_42
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addb815e5ec509c00800000000000000
+      internalID: 905325667562339802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30a82a19159ea5a0800000000000000
+      internalID: -6508100476458196931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_44
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60751a89115630f0800000000000000
+      internalID: -1137632685731778454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_45
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322ff992274154210800000000000000
+      internalID: 1316480946632913443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_46
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813c03103fbb31700800000000000000
+      internalID: 509957835194417944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_47
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 860
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5dd0c53f63aafa0800000000000000
+      internalID: -5788753952181987858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6113abd1ed9ab10800000000000000
+      internalID: 1993368529347352237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_49
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9a43110379938b0800000000000000
+      internalID: -5171936464355415583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_50
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67619ff1c3bd79310800000000000000
+      internalID: 1411838059484878454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_51
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b32391f344dbe7b0800000000000000
+      internalID: -5193824356960885838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_52
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df12e63d0c7bd210800000000000000
+      internalID: 1358816108779544533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_53
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b203001cba721670800000000000000
+      internalID: 8507997594197361331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8d92a6cca8519c0800000000000000
+      internalID: -3957104087016023811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_55
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 430
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65417f0ea32224460800000000000000
+      internalID: 7224374388533433430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0183ae7c216c65d0800000000000000
+      internalID: -3067970402415050482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_57
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182b05f98f36e7d20800000000000000
+      internalID: 3278167498248204929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_58
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c35a18062d6fde0800000000000000
+      internalID: -1299620130516026349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_59
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b922e2d053849c570800000000000000
+      internalID: 8487394365448004251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_60
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c150cb9e0199ebdf0800000000000000
+      internalID: -162524238618819300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voiddrop_spawn_61
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 68
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2a9084439ec3ef0800000000000000
+      internalID: -126970278717054215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 98629a901196479408647128364cd9fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":68.0,"y":430.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      voiddrop_spawn_0: -8800986079511874828
+      voiddrop_spawn_1: -1002612049550198282
+      voiddrop_spawn_10: -5221693854112232923
+      voiddrop_spawn_11: -6258981593606724202
+      voiddrop_spawn_12: -5451942913183129327
+      voiddrop_spawn_13: -4770588991044500098
+      voiddrop_spawn_14: -2816017069237655756
+      voiddrop_spawn_15: -8495305301414594308
+      voiddrop_spawn_16: 6283246146972709920
+      voiddrop_spawn_17: 389982669946689472
+      voiddrop_spawn_18: 2664991722738522944
+      voiddrop_spawn_19: -6562811576450160459
+      voiddrop_spawn_2: -3866935625894462191
+      voiddrop_spawn_20: -2149948673768228771
+      voiddrop_spawn_21: -2927774780725274592
+      voiddrop_spawn_22: -4343682935773116757
+      voiddrop_spawn_23: -4728438857750242442
+      voiddrop_spawn_24: -4421034143484932818
+      voiddrop_spawn_25: -1174472951858677084
+      voiddrop_spawn_26: -5102989301101827055
+      voiddrop_spawn_27: -5064722363508147368
+      voiddrop_spawn_28: -7434729653350478054
+      voiddrop_spawn_29: 6535901687067211824
+      voiddrop_spawn_3: 8209132241719828727
+      voiddrop_spawn_30: -1949276105546490941
+      voiddrop_spawn_31: -454852714873962316
+      voiddrop_spawn_32: 2784276070003862022
+      voiddrop_spawn_33: -5805956661804375517
+      voiddrop_spawn_34: -5943289957362975217
+      voiddrop_spawn_35: -5325471476465944160
+      voiddrop_spawn_36: -3047727110822852055
+      voiddrop_spawn_37: 4529320689131015700
+      voiddrop_spawn_38: 8576544294861503362
+      voiddrop_spawn_39: 5658393129988401328
+      voiddrop_spawn_4: 3725609052762981880
+      voiddrop_spawn_40: -925267814871756453
+      voiddrop_spawn_41: -2033775951865195586
+      voiddrop_spawn_42: 905325667562339802
+      voiddrop_spawn_43: -6508100476458196931
+      voiddrop_spawn_44: -1137632685731778454
+      voiddrop_spawn_45: 1316480946632913443
+      voiddrop_spawn_46: 509957835194417944
+      voiddrop_spawn_47: -5788753952181987858
+      voiddrop_spawn_48: 1993368529347352237
+      voiddrop_spawn_49: -5171936464355415583
+      voiddrop_spawn_5: 5574743418009284462
+      voiddrop_spawn_50: 1411838059484878454
+      voiddrop_spawn_51: -5193824356960885838
+      voiddrop_spawn_52: 1358816108779544533
+      voiddrop_spawn_53: 8507997594197361331
+      voiddrop_spawn_54: -3957104087016023811
+      voiddrop_spawn_55: 7224374388533433430
+      voiddrop_spawn_56: -3067970402415050482
+      voiddrop_spawn_57: 3278167498248204929
+      voiddrop_spawn_58: -1299620130516026349
+      voiddrop_spawn_59: 8487394365448004251
+      voiddrop_spawn_6: 7575340371690668636
+      voiddrop_spawn_60: -162524238618819300
+      voiddrop_spawn_61: -126970278717054215
+      voiddrop_spawn_7: -9068141108727543071
+      voiddrop_spawn_8: 8145917107237192305
+      voiddrop_spawn_9: 7540403587115913223
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

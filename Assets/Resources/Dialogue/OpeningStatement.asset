@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8875f9e679b621c40a0bff87b8bfe715, type: 3}
+  m_Name: OpeningStatement
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueText
+  title: The Scripter
+  dialogue: Hmmm*... *lets see here*...|*Let me just grab a better light*...~
+  pauses:
+  - 0.5
+  - 0.075
+  - 0.5
+  - 0.075
+  - 0.5

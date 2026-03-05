@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Interaction Circle
+  - Tabi Game Controller
+  - Tabi Guy
+  - Player HUD
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Level
+  - World Walls
+  - Objects
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1542209593
+    locked: 0
+  - name: Objects
+    uniqueID: 570437393
+    locked: 0
+  - name: Effects
+    uniqueID: 888689489
+    locked: 0
+  - name: Player
+    uniqueID: 1360914757
+    locked: 0
+  - name: Foreground Object Detail
+    uniqueID: 4140589929
+    locked: 0
+  - name: World Effects
+    uniqueID: 1260890341
+    locked: 0
+  - name: Settings
+    uniqueID: 1002732619
+    locked: 0
+  m_RenderingLayers:
+  - Default
