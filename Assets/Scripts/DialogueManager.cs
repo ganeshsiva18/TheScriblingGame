@@ -1,9 +1,6 @@
 using System.Collections;
 using TMPro;
-using Unity.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
-using UnityEngine.Windows;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -57,11 +54,12 @@ public class DialogueManager : MonoBehaviour
     public void DoDialogue(DialogueText text)
     {
         dialogueText = text;
-        dialogueTextBubble.alpha = 1;
-        titleTextBubble.alpha = 1;
+        titleAnimator.SetTrigger("textFadeIn");
+        dialogueAnimator.SetTrigger("textFadeIn");
 
         titleTextBubble.text = text.title;
         dialogueTextBubble.text = "";
+
         printDialogue = true;
         dialogueTimer = 0;
         textNum = 0;
@@ -101,7 +99,7 @@ public class DialogueManager : MonoBehaviour
         textNum++;
     }
 
-    private IEnumerator ClearDialogueTextAfterSeconds(float seconds)
+    public IEnumerator ClearDialogueTextAfterSeconds(float seconds)
     {
         yield return new WaitForSeconds(seconds);
         titleAnimator.SetTrigger("textFadeOut");

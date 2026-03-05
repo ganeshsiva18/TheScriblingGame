@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class TabiGameAI: MonoBehaviour
 {
@@ -8,7 +7,7 @@ public class TabiGameAI: MonoBehaviour
     [SerializeField] private SpriteRenderer tabiSprite;
     [SerializeField] private PauseManager pauseManager;
     [SerializeField] private GameObject gameScreenPrefab;
-    [SerializeField] private DialogueText firstExclaimation;
+    [SerializeField] private DialogueText[] tabiGuyVoicelines;
     private GameObject gameScreenInstance;
 
     public int timesPlayed = 0;
@@ -31,6 +30,7 @@ public class TabiGameAI: MonoBehaviour
 
     private void LoadTabiGame()
     {
+        StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
         gameScreenInstance = Instantiate(gameScreenPrefab, GameObject.FindGameObjectWithTag("Player").transform.position, Quaternion.identity);
         gameScreenInstance.GetComponentInChildren<TabiGameController>().threatThreshold -= timesPlayed;
     }
@@ -39,7 +39,10 @@ public class TabiGameAI: MonoBehaviour
     {
         if (timesPlayed == 0)
         {
-            DialogueManager.Instance.DoDialogue(firstExclaimation);
+            DialogueManager.Instance.DoDialogue(tabiGuyVoicelines[0]);
+        } else
+        {
+            DialogueManager.Instance.DoDialogue(tabiGuyVoicelines[Random.Range(1, 4)]);
         }
         GameManager.Instance.canSettings = false;
         isTabiGame = true;
@@ -93,7 +96,9 @@ public class TabiGameAI: MonoBehaviour
 
     private IEnumerator TabiDefeatCutscene()
     {
+        DialogueManager.Instance.DoDialogue(tabiGuyVoicelines[4]);
         yield return new WaitForSeconds(2);
+        StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
         GameManager.Instance.canMove = true;
         GameManager.Instance.canSettings = true;
     }
