@@ -5,6 +5,8 @@ public class InventoryManager: MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject newItemAlert;
+    [SerializeField] private InventoryItem secondObol;
+    [SerializeField] private InventoryItem finalObol;
 
     public static InventoryManager Instance;
     private List<InventoryItem> inventoryItems = new List<InventoryItem>();
@@ -64,6 +66,7 @@ public class InventoryManager: MonoBehaviour
     public void AddInventoryItem(InventoryItem item)
     {
         inventoryItems.Add(item);
+        ObolCheck(item);
         if (newItemAlertInstance == null)
         {
             newItemAlertInstance = Instantiate(newItemAlert);
@@ -78,6 +81,43 @@ public class InventoryManager: MonoBehaviour
     public void RemoveInventoryItem(InventoryItem item)
     {
         inventoryItems.Remove(item);
+    }
+
+    // Removes an item from the inventory
+    public void RemoveInventoryItem(string itemName)
+    {
+        foreach (InventoryItem item in inventoryItems)
+        {
+            if (item.itemName == itemName)
+            {
+                inventoryItems.Remove(item);
+                break;
+            }
+        }
+    }
+
+    // Checks if an item is in inventory
+    public bool HasItem(InventoryItem item)
+    {
+        if (inventoryItems.Contains(item))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    public bool HasItem(string itemName)
+    {
+        foreach (InventoryItem item in inventoryItems)
+        {
+            if (item.itemName == itemName)
+            {
+                return true;
+            }
+        }
+        return false; 
     }
 
     // Reveals and positions an inventory item
@@ -95,5 +135,22 @@ public class InventoryManager: MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(gameObject.transform.position.x+150, gameObject.transform.position.y);
         rectTransform.anchoredPosition += new Vector2(position*110, 0);
         inventoryItemsVisual.Add(visualItem);
+    }
+
+    private void ObolCheck(InventoryItem item)
+    {
+        if (item.itemName == "FirstObol")
+        {
+            if (HasItem("FirstObol"))
+            {
+                RemoveInventoryItem("FirstObol");
+                AddInventoryItem(secondObol);
+            }
+            else if (HasItem("SecondObol"))
+            {
+                RemoveInventoryItem("SecondObol");
+                AddInventoryItem(finalObol);
+            }
+        }
     }
 }
