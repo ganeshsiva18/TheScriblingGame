@@ -65,7 +65,6 @@ public class InventoryManager: MonoBehaviour
     // Adds an item into the inventory
     public void AddInventoryItem(InventoryItem item)
     {
-        inventoryItems.Add(item);
         ObolCheck(item);
         if (newItemAlertInstance == null)
         {
@@ -102,10 +101,8 @@ public class InventoryManager: MonoBehaviour
         if (inventoryItems.Contains(item))
         {
             return true;
-        } else
-        {
-            return false;
         }
+        return false;
     }
 
     public bool HasItem(string itemName)
@@ -150,7 +147,13 @@ public class InventoryManager: MonoBehaviour
             {
                 RemoveInventoryItem("SecondObol");
                 AddInventoryItem(finalObol);
+            } else
+            {
+                inventoryItems.Add(item);
             }
+        } else
+        {
+            inventoryItems.Add(item);
         }
     }
 }
