@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3723146391424196248}
   - component: {fileID: 980752633959780001}
   - component: {fileID: 7952828799394145765}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: threat_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +59,7 @@ Animator:
   m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &3723146391424196248
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,6 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 1002732619
   m_SortingLayer: 7
   m_SortingOrder: 3
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8a77cd91986a3e146b975e93850094f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -113,7 +115,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &980752633959780001
 MonoBehaviour:
@@ -173,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4189100753277591019}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ThreatPow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

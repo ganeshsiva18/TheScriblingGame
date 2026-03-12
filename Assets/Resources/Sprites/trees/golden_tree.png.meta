@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e5dc6c8cc26e15d409998fc1f0da2fb2
+guid: 293829e9e04c7a9428a13ed014d0c594
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4104688266150251831
-    second: twoObolPieces_0
-  - first:
-      213: 2398195435428982641
-    second: twoObolPieces_1
+      213: -9124438632236652042
+    second: golden_tree_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: twoObolPieces_0
+      name: golden_tree_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 219
         y: 0
-        width: 100
-        height: 100
+        width: 662
+        height: 1044
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73d89910b38c6f830800000000000000
-      internalID: 4104688266150251831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: twoObolPieces_1
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 0
-        width: 46
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17f25b6da0a184120800000000000000
-      internalID: 2398195435428982641
+      spriteID: 6f9eea6486b7f5180800000000000000
+      internalID: -9124438632236652042
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b28c58696eec224c80d1558661d2dd8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      twoObolPieces_0: 4104688266150251831
-      twoObolPieces_1: 2398195435428982641
+      golden_tree_0: -9124438632236652042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

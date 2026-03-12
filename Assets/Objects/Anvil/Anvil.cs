@@ -8,6 +8,7 @@ public class Anvil : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject anvilGameMenu;
     [SerializeField] private Image swordSprite;
     [SerializeField] private Sprite[] swords;
+    [SerializeField] private InventoryItem obolPiece;
     private int count = 0;
     private float clickTimer = 0;
     private int spriteIndex = 0;
@@ -62,9 +63,19 @@ public class Anvil : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Right && definer.interactible && !swordForged)
+        if (eventData.button == PointerEventData.InputButton.Right && definer.interactible)
         {
-            OpenAnvilMenu();
+            if (!swordForged)
+            {
+                OpenAnvilMenu();
+            }
+            else if (InventoryManager.Instance.HasItem("Ring"))
+            {
+                InventoryManager.Instance.RemoveInventoryItem("Ring");
+                InventoryManager.Instance.AddInventoryItem(obolPiece);
+                char[] chars = { 'R', 'I', 'N', 'G' };
+                LetterManager.Instance.AddLetters(chars, transform.position);
+            }
         }
     }
 
