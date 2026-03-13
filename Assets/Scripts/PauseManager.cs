@@ -36,18 +36,10 @@ public class PauseManager: MonoBehaviour
         gameActions = new GameActions();
         gameActions.Character.Pause.canceled += OnKeyReleased;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OpenSettings()
     {
         GameManager.Instance.isSettings = true;
         GameManager.Instance.canMove = false;
-        Time.timeScale = 0f;
 
         settings.SetActive(true);
     }
@@ -56,7 +48,6 @@ public class PauseManager: MonoBehaviour
     {
         GameManager.Instance.isSettings = false;
         GameManager.Instance.canMove = true;
-        Time.timeScale = 1f;
 
         settings.SetActive(false);
     }

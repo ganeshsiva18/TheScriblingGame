@@ -109,6 +109,10 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
                 fishes.RemoveAt(fishIndex);
                 fishCharacters.RemoveAt(fishIndex);
             }
+            if (fishes.Count == 0)
+            {
+                GameManager.Instance.pondEmpty = true;
+            }
         }
     }
 

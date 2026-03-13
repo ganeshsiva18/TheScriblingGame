@@ -11,6 +11,7 @@ public class ZStatue : MonoBehaviour, IPointerDownHandler
         if (eventData.button == PointerEventData.InputButton.Right && definer.interactible && InventoryManager.Instance.HasItem("Obol"))
         {
             InventoryManager.Instance.RemoveInventoryItem("Obol");
+            GameManager.Instance.ifObolClaimed = true;
             statueHead.SetActive(false);
             LetterManager.Instance.AddLetter('Z', transform.position);
         }

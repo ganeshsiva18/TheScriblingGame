@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LetterManager: MonoBehaviour
 {
@@ -40,20 +41,9 @@ public class LetterManager: MonoBehaviour
             { 'Z', 26 },
         };
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     private void Awake()
     {
         Instance = this;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void AddLetter(char letter, int letterNumber, Vector2 letterSpawnPos)
@@ -90,6 +80,14 @@ public class LetterManager: MonoBehaviour
         rb.linearVelocity = vel;
         letterFall.GetComponent<TextMeshPro>().text = letter.ToString();
         Destroy(letterFall, 5f);
+
+        if (lettersFound.Count == 26)
+        {
+            GameManager.Instance.canSettings = false;
+            GameManager.Instance.canMove = false;
+            GameManager.Instance.playerScene = false;
+            SceneManager.LoadSceneAsync(3);
+        }
     }
 
     public void AddLetters(char[] chars, Vector2 position)

@@ -14,12 +14,6 @@ public class GameManager: MonoBehaviour
     // If player can move
     public bool canMove = true;
 
-    // If the dummy was hit
-    public bool dummyHit = false;
-
-    // If the tabi game has been finished
-    public bool tabiFinished = false;
-
     // If the fish has been collected
     public bool fishCollected = false;
 
@@ -27,9 +21,38 @@ public class GameManager: MonoBehaviour
     public float sfxAudio;
     public float musicAudio;
 
-    private bool playerScene = false;
+    public bool playerScene = false;
     private GameObject playerHUD;
 
+    // If the dummy was hit
+    public bool dummyHit = false;
+
+    // If the tabi game has been finished
+    public bool tabiFinished = false;
+
+    // If all has been collected
+    public bool pondEmpty = false;
+
+    // If the ring has been collected
+    public bool monkeyTreeShook = false;
+
+    // If the ring has been collected
+    public bool goldenTreeShook = false;
+
+    // If the ring has been broken
+    public bool ringBroken = false;
+
+    // If the anvil has been used
+    public bool anvilUsed = false;
+
+    // If the vertex has been broken
+    public bool vertexCrushed = false;
+
+    // If the cave being has not been talked to
+    public bool ifEyesNotTalked = false;
+
+    // If the obol hasnt been claimed
+    public bool ifObolClaimed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -52,7 +75,7 @@ public class GameManager: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerScene) 
+        if (playerScene && playerHUD != null) 
         {
             if (!canMove)
             {

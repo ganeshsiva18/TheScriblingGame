@@ -48,12 +48,13 @@ public class DialogueManager : MonoBehaviour
         if (printDialogue)
         {
             PrintChar();
-            dialogueTimer += Time.deltaTime;
+            dialogueTimer += Time.unscaledDeltaTime;
         } 
     }
     public void DoDialogue(DialogueText text)
     {
         dialogueText = text;
+        StopAllCoroutines();
         titleAnimator.SetTrigger("textFadeIn");
         dialogueAnimator.SetTrigger("textFadeIn");
 
@@ -101,7 +102,7 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator ClearDialogueTextAfterSeconds(float seconds)
     {
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSecondsRealtime(seconds);
         titleAnimator.SetTrigger("textFadeOut");
         dialogueAnimator.SetTrigger("textFadeOut");
     }

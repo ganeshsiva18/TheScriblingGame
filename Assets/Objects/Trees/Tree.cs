@@ -17,7 +17,7 @@ public class Tree : MonoBehaviour, IPointerDownHandler
         if (isMonkey)
         {
             timer += Time.deltaTime;
-            if (randomTime > timer)
+            if (randomTime < timer)
             {
                 timer = 0;
                 animator.SetTrigger("shake");
@@ -34,12 +34,14 @@ public class Tree : MonoBehaviour, IPointerDownHandler
             {
                 InventoryManager.Instance.AddInventoryItem(item);
                 isGolden = false;
+                GameManager.Instance.goldenTreeShook = true;
             } else if (isMonkey)
             {
                 Instantiate(monkey, transform.position, Quaternion.identity);
                 char[] chars = { 'M', 'O', 'N', 'K', 'E', 'Y' };
                 LetterManager.Instance.AddLetters(chars, transform.position);
                 isMonkey = false;
+                GameManager.Instance.monkeyTreeShook = true;
             }
         }
     }

@@ -11,6 +11,7 @@ public class Vertex : MonoBehaviour
             char[] c = { 'V', 'E', 'R', 'T', 'E', 'X' };
             LetterManager.Instance.AddLetters(c, gameObject.transform.position);
             InventoryManager.Instance.AddInventoryItem(obolPiece2);
+            GameManager.Instance.vertexCrushed = true;
             Destroy(gameObject);
         }
     }

@@ -71,6 +71,7 @@ public class Anvil : MonoBehaviour, IPointerDownHandler
             }
             else if (InventoryManager.Instance.HasItem("Ring"))
             {
+                GameManager.Instance.ringBroken = true;
                 InventoryManager.Instance.RemoveInventoryItem("Ring");
                 InventoryManager.Instance.AddInventoryItem(obolPiece);
                 char[] chars = { 'R', 'I', 'N', 'G' };
