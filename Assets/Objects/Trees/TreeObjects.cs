@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Tree : MonoBehaviour, IPointerDownHandler
+public class TreeObjects : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private InteractibleDefiner definer;
     [SerializeField] private Animator animator;
