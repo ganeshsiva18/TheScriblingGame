@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8875f9e679b621c40a0bff87b8bfe715, type: 3}
-  m_Name: MonkeyDialogueQuestion
+  m_Name: Question10
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   title: The Scripter
   dialogue: The tree next to the pond was shaking!~

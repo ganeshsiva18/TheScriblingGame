@@ -23,7 +23,7 @@ public class EyesScript : MonoBehaviour, IPointerDownHandler
             {
                 InventoryManager.Instance.RemoveInventoryItem(fishItem);
                 InventoryManager.Instance.AddInventoryItem(obolPiece);
-                GameManager.Instance.ifEyesNotTalked = true;
+                QuestionManager.Instance.PopQuestionFromList(4);
                 Destroy(eyes);
             }
         }

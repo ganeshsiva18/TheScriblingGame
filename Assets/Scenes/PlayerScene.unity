@@ -5183,7 +5183,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 861371573}
-        m_TargetAssemblyTypeName: Question, Assembly-CSharp
+        m_TargetAssemblyTypeName: QuestionManager, Assembly-CSharp
         m_MethodName: AskQuestion
         m_Mode: 1
         m_Arguments:
@@ -5265,19 +5265,19 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4a38d6d39139e840bc274dd710352f8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  dialogueText:
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionManager
+  dialogueTextList:
   - {fileID: 11400000, guid: 36fc7838727c5ef4d992a90900412cd5, type: 2}
   - {fileID: 11400000, guid: bfe0014d8ec9b614dbcb87c476aa3afb, type: 2}
   - {fileID: 11400000, guid: ef91d68fcdd2bbc47befb45a4c2a2f7f, type: 2}
   - {fileID: 11400000, guid: 5b75a3c523c81a248acaaa23fdf03d98, type: 2}
-  - {fileID: 11400000, guid: 5c4848bf9de9f584aa5f946eb5bf19cc, type: 2}
   - {fileID: 11400000, guid: 1aa13ed041f21d343a30d2cf06389b10, type: 2}
   - {fileID: 11400000, guid: 9a8a9a7ec2273d843a7b56b31cd6d2a6, type: 2}
   - {fileID: 11400000, guid: a2bff046f0a7360438ab05bcbc9c5509, type: 2}
   - {fileID: 11400000, guid: a1d8287e0036f4b448f5e3e1fa169a04, type: 2}
   - {fileID: 11400000, guid: 07316a5ba499508418d7c4a3d555f5c6, type: 2}
   - {fileID: 11400000, guid: 4dd960a8a26ffe548a0d01ae18c53e7a, type: 2}
+  - {fileID: 11400000, guid: 5c4848bf9de9f584aa5f946eb5bf19cc, type: 2}
 --- !u!1 &880958199
 GameObject:
   m_ObjectHideFlags: 0

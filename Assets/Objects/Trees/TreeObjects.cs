@@ -34,14 +34,14 @@ public class TreeObjects : MonoBehaviour, IPointerDownHandler
             {
                 InventoryManager.Instance.AddInventoryItem(item);
                 isGolden = false;
-                GameManager.Instance.goldenTreeShook = true;
+                QuestionManager.Instance.PopQuestionFromList(5);
             } else if (isMonkey)
             {
                 Instantiate(monkey, transform.position, Quaternion.identity);
                 char[] chars = { 'M', 'O', 'N', 'K', 'E', 'Y' };
                 LetterManager.Instance.AddLetters(chars, transform.position);
                 isMonkey = false;
-                GameManager.Instance.monkeyTreeShook = true;
+                QuestionManager.Instance.PopQuestionFromList(10);
             }
         }
     }

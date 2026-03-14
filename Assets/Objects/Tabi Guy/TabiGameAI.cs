@@ -9,12 +9,12 @@ public class TabiGameAI: MonoBehaviour
     [SerializeField] private GameObject gameScreenPrefab;
     [SerializeField] private DialogueText[] tabiGuyVoicelines;
     private GameObject gameScreenInstance;
+    public bool tabiFinished = false;
 
     public int timesPlayed = 0;
     public bool isTabiGame = false;
     public bool instructionsClosed = false;
     public int health = 3;
-
     public bool interactible;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,6 +65,7 @@ public class TabiGameAI: MonoBehaviour
 
     public void WinTabiGame()
     {
+        tabiFinished = true;
         GetComponent<BoxCollider2D>().enabled = false;
         foreach (var item in GetComponentsInChildren<BoxCollider2D>())
         {
@@ -77,7 +78,7 @@ public class TabiGameAI: MonoBehaviour
         Destroy(gameScreenInstance);
         GetComponentInChildren<SpriteRenderer>().GetComponent<Animator>().SetTrigger("tabiDefeat");
 
-        GameManager.Instance.tabiFinished = true;
+        QuestionManager.Instance.PopQuestionFromList(1);
         char[] charArray = { 'S', 'O', 'C', 'K', 'S' };
         LetterManager.Instance.AddLetters(charArray, GetComponentInChildren<SpriteRenderer>().transform.position);
         StartCoroutine(TabiDefeatCutscene());

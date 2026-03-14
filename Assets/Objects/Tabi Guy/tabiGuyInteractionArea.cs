@@ -18,7 +18,7 @@ public class TabiGuyInteractionArea: MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (tabiGameAI.interactible && (eventData.button == PointerEventData.InputButton.Right) && !GameManager.Instance.tabiFinished && !tabiGameAI.isTabiGame)
+        if (tabiGameAI.interactible && (eventData.button == PointerEventData.InputButton.Right) && !tabiGameAI.isTabiGame)
         {
             if (tabiGameAI.timesPlayed == 0)
             {

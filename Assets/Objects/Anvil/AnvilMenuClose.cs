@@ -7,7 +7,7 @@ public class AnvilMenuClose : MonoBehaviour
     {
         gameObject.SetActive(false);
         GameManager.Instance.canMove = true;
-        GameManager.Instance.anvilUsed = true;
+        QuestionManager.Instance.PopQuestionFromList(6);
         char[] chars = { 'B', 'L', 'A', 'D', 'E' };
         LetterManager.Instance.AddLetters(chars, transform.position);
         InventoryManager.Instance.AddInventoryItem(sword);

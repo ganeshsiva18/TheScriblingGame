@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Question7
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   title: The Scripter
-  dialogue: That ring holds potential...|Maybe it could be broken?~
+  dialogue: I sense some golden object that holds potential...~
   pauses: []
   waitTimeToExitDialogue: 2

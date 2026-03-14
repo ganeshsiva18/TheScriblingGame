@@ -100,7 +100,6 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
                 fishes.RemoveAt(fishIndex);
                 fishCharacters.RemoveAt(fishIndex);
                 InventoryManager.Instance.AddInventoryItem(salmon);
-                GameManager.Instance.fishCollected = true;
             } 
             else
             {
@@ -111,7 +110,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
             }
             if (fishes.Count == 0)
             {
-                GameManager.Instance.pondEmpty = true;
+                QuestionManager.Instance.PopQuestionFromList(3);
             }
         }
     }
