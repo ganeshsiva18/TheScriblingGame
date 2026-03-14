@@ -1,10 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Question : MonoBehaviour
+public class QuestionManager : MonoBehaviour
 {
     [SerializeField] private DialogueText[] dialogueText;
+    [SerializeField] private Dictionary<int, DialogueText> dialogueTextPair = new();
     private bool hasBeenQuestioned = false;
-
+    public static QuestionManager Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void AskQuestion()
     {
         if (!hasBeenQuestioned)
@@ -55,5 +61,10 @@ public class Question : MonoBehaviour
                 DialogueManager.Instance.DoDialogue(dialogueText[10]);
             }
         }
+    }
+
+    public void PopQuestionFromList(int keyToPop)
+    {
+        dialogueTextPair.Remove(keyToPop);
     }
 }
