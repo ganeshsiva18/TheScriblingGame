@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403810533820413841}
-  - component: {fileID: 6410738775187163336}
   - component: {fileID: 2006896840965205854}
+  - component: {fileID: 313184443184839231}
   m_Layer: 0
   m_Name: Basic Tree
   m_TagString: Untagged
@@ -35,8 +35,26 @@ Transform:
   - {fileID: 6093231760821625075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6410738775187163336
-BoxCollider2D:
+--- !u!114 &2006896840965205854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744014477058836485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883951317ab64bd41ad41644b888dc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tree
+  definer: {fileID: 3447791714457435213}
+  animator: {fileID: 8253245640090850629}
+  item: {fileID: 0}
+  monkey: {fileID: 0}
+  isGolden: 1
+  isMonkey: 0
+--- !u!60 &313184443184839231
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -69,37 +87,27 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.1694156, y: -6.0338235}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.34375, y: 16.3125}
-    newSize: {x: 6.62, y: 10.44}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.6269143, y: 4.579404}
-  m_EdgeRadius: 0
---- !u!114 &2006896840965205854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4744014477058836485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883951317ab64bd41ad41644b888dc7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tree
-  definer: {fileID: 3447791714457435213}
-  animator: {fileID: 8253245640090850629}
-  items:
-  - {fileID: 11400000, guid: b91c607b668b3ef4988d1ea001bfa447, type: 2}
-  - {fileID: 11400000, guid: d4417efa6a01b8d47865e351001a6565, type: 2}
-  isGolden: 1
-  isFruity: 1
+  m_Points:
+    m_Paths:
+    - - {x: 1.2053933, y: -2.9032874}
+      - {x: -1.5122292, y: -3.757575}
+      - {x: -1.9535456, y: -5.8248563}
+      - {x: -2.695671, y: -7.2401876}
+      - {x: -4.088001, y: -8.132284}
+      - {x: 3.6292353, y: -8.21724}
+      - {x: 2.384088, y: -7.566828}
+      - {x: 1.6816841, y: -6.6914144}
+  m_UseDelaunayMesh: 1
 --- !u!1 &6818842238424656695
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,8 +186,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 570437393
-  m_SortingLayer: 2
+  m_SortingLayerID: -154377367
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8667466294985060184, guid: 49fe2f578071f2c4cbfc1bd7f5095547, type: 3}

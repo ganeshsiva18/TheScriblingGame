@@ -5,7 +5,9 @@ public class QuestionManager : MonoBehaviour
 {
     public static QuestionManager Instance;
 
+    [SerializeField] private List<int> dialogueTextRef;
     [SerializeField] private List<DialogueText> dialogueTextList;
+    [SerializeField] private Animator animator;
     private bool hasBeenQuestioned = false;
 
     private void Awake()
@@ -14,6 +16,7 @@ public class QuestionManager : MonoBehaviour
     }
     public void AskQuestion()
     {
+        animator.SetTrigger("questionShake");
         if (!hasBeenQuestioned)
         {
             DialogueManager.Instance.DoDialogue(dialogueTextList[0]);
@@ -28,6 +31,7 @@ public class QuestionManager : MonoBehaviour
 
     public void PopQuestionFromList(int keyToPop)
     {
-        dialogueTextList.RemoveAt(keyToPop);
+        dialogueTextList.RemoveAt(dialogueTextRef.IndexOf(keyToPop));
+        dialogueTextRef.RemoveAt(dialogueTextRef.IndexOf(keyToPop));
     }
 }

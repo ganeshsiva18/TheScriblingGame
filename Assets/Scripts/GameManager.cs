@@ -47,6 +47,8 @@ public class GameManager: MonoBehaviour
             }
         }
     }
+
+    // Reload references on scene change
     public void PlayerSceneCheck()
     {
         playerScene = true;
