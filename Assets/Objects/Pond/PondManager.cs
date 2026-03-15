@@ -9,9 +9,11 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
     [SerializeField] private InteractibleDefiner definer;
     [SerializeField] private List<GameObject> fishes;
     [SerializeField] private InventoryItem salmon;
+    [SerializeField] private Transform parent;
+
     private List<char> fishCharacters = new(){'F', 'I', 'S', 'H', 'x'};
 
-    readonly private Vector2 fishingLineSpawn = new Vector2(-10f, 24f);
+    private Vector2 fishingLineSpawn;
     private GameObject fishingLineInstance;
     private float pondRippleTimer;
 
@@ -25,7 +27,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        fishingLineSpawn = new Vector2(transform.position.x-8, transform.position.y-5);
     }
 
     // Update is called once per frame
@@ -64,21 +66,21 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
 
     private void SpawnRipple()
     {
-        Destroy(Instantiate(pondRipple, new Vector2(transform.position.x + Random.Range(-1.5f, 1.5f), transform.position.y + Random.Range(-.5f, .5f)), Quaternion.identity), .5f);
+        Destroy(Instantiate(pondRipple, new Vector2(transform.position.x + Random.Range(-11.5f, -4.5f), transform.position.y + Random.Range(-10f, -7.25f)), Quaternion.identity, parent), .5f);
     }
     private void SpawnFishHookedRipples()
     {
         int randomNum = Random.Range(0, 10);
         if (randomNum == 0)
         {
-            Destroy(Instantiate(pondRipple, new Vector2(transform.position.x + Random.Range(-.75f, .25f), transform.position.y + Random.Range(0f, -1f)), Quaternion.identity), .5f);
+            Destroy(Instantiate(pondRipple, new Vector2(transform.position.x + Random.Range(-8.5f, -7.5f), transform.position.y + Random.Range(-9f, -8f)), Quaternion.identity, parent), .5f);
         }
     }
     private void CastLine()
     {
         isFishing = true;
         fishTimer = Random.Range(3f, 10f);
-        fishingLineInstance = Instantiate(fishingLine, fishingLineSpawn, Quaternion.identity);
+        fishingLineInstance = Instantiate(fishingLine, fishingLineSpawn, Quaternion.identity, parent);
     }
 
     public void ReelLine()
