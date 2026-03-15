@@ -11,20 +11,19 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
     [SerializeField] private InventoryItem salmon;
     [SerializeField] private Transform parent;
 
-    private List<char> fishCharacters = new(){'F', 'I', 'S', 'H', 'x'};
-
+    // Fishing references
+    private List<char> fishCharacters = new() { 'F', 'I', 'S', 'H', 'x' };
     private Vector2 fishingLineSpawn;
     private GameObject fishingLineInstance;
-    private float pondRippleTimer;
+    private bool interactible;
 
+    // Fishing data
+    private float pondRippleTimer;
     private float fishTimer;
     private float fishHookedTimer;
     private bool isFishing;
     private bool fishHooked;
-    private bool interactible;
 
-    public bool getFishingState() { return isFishing; }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         fishingLineSpawn = new Vector2(transform.position.x-8, transform.position.y-5);
@@ -134,6 +133,8 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
             }
         }
     }
+
+    public bool getFishingState() { return isFishing; }
 }
 
 

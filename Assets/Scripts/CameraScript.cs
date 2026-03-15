@@ -13,10 +13,4 @@ public class CameraScript: MonoBehaviour
         DontDestroyOnLoad(gameObject);
         cam.Follow = player.transform;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

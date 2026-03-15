@@ -7,10 +7,4 @@ public class FireWhoosh: MonoBehaviour
     {
         SoundManager.Instance.PlaySound2D("fireWhoosh");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

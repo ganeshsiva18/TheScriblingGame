@@ -1,14 +1,13 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
     private GameActions gameActions;
-    private Animator animator;
 
-    public int moveSpeed = 5;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float moveSpeed = 7.5f;
+
     void OnEnable()
     {
         gameActions.Enable();
@@ -19,8 +18,6 @@ public class PlayerMovement : MonoBehaviour
     }
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
         gameActions = new GameActions();
     }
 

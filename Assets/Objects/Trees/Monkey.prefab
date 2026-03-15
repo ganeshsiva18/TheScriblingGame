@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6151641897886797812}
   - component: {fileID: 5058928168487039072}
   - component: {fileID: 521540417174503747}
-  - component: {fileID: 7207258778349477756}
+  - component: {fileID: 7845174608777967617}
   m_Layer: 0
   m_Name: Monkey
   m_TagString: Untagged
@@ -120,7 +120,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7207258778349477756
+--- !u!114 &7845174608777967617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,6 +129,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8499978163974262548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4213ab5ecbcc44b8c4d0d92c2aac68, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ce77be0450c29a4b81cf01f85549828, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyDestroy

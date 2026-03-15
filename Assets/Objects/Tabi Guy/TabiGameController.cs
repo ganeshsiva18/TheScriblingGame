@@ -1,19 +1,19 @@
-using System.Collections;
 using UnityEngine;
 
 public class TabiGameController: MonoBehaviour
 {
+    [SerializeField] private GameObject gameScreen;
+    [SerializeField] private GameObject threat;
+
     private GameObject player;
+    private GameObject tabiGuy;
+    private TabiGameAI tabiGameAI;
+
     private float timer;
     private float limit;
     private int threatsDestroyed = 0;
     public int threatThreshold = 20;
 
-    private GameObject tabiGuy;
-    private TabiGameAI tabiGameAI;
-    [SerializeField] private GameObject gameScreen;
-    [SerializeField] private GameObject threat;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         tabiGuy = GameObject.FindGameObjectWithTag("Tabi Guy");
@@ -22,7 +22,6 @@ public class TabiGameController: MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
         gameScreen.transform.position = player.transform.position;
@@ -32,6 +31,8 @@ public class TabiGameController: MonoBehaviour
         }
         if (tabiGameAI.instructionsClosed) { 
             timer += Time.deltaTime;
+
+            // Timing to spawn a threat
             if (timer > limit)
             {
                 timer = 0;

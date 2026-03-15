@@ -14,12 +14,6 @@ public class LightFlicker: MonoBehaviour
         StartCoroutine(fireFlicker());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private IEnumerator fireFlicker()
     {
         while (true)

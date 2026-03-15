@@ -10,8 +10,6 @@ public class DummyAI: MonoBehaviour
     [SerializeField] private TabiGameAI tabiGameAI;
     private float timer;
 
-
-    // Update is called once per frame
     void Update()
     {
         if (!tabiGameAI.tabiFinished) 

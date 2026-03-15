@@ -16,13 +16,6 @@ public class TabiGameAI: MonoBehaviour
     public bool instructionsClosed = false;
     public int health = 3;
     public bool interactible;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         interactible = definer.interactible;
