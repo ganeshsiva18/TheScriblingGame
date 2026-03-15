@@ -9,7 +9,6 @@ public class PauseManager: MonoBehaviour
 {
     private GameActions gameActions;
 
-    [SerializeField] private GameObject letterRef;
     [SerializeField] private GameObject settings;
     [SerializeField] private AudioMixer audioMixer;
 

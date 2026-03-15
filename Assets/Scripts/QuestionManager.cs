@@ -16,7 +16,7 @@ public class QuestionManager : MonoBehaviour
     }
     public void AskQuestion()
     {
-        animator.SetTrigger("questionShake");
+        animator.SetTrigger("questionUnreveal");
         if (!hasBeenQuestioned)
         {
             DialogueManager.Instance.DoDialogue(dialogueTextList[0]);
@@ -32,6 +32,6 @@ public class QuestionManager : MonoBehaviour
     public void PopQuestionFromList(int keyToPop)
     {
         dialogueTextList.RemoveAt(dialogueTextRef.IndexOf(keyToPop));
-        dialogueTextRef.RemoveAt(dialogueTextRef.IndexOf(keyToPop));
+        dialogueTextRef.Remove(keyToPop);
     }
 }

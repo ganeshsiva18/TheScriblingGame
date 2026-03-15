@@ -232,7 +232,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1537445620627373428, guid: bdfffe726cd1ba949b90283b588bfc46, type: 3}
       propertyPath: xOffset
-      value: -0.5
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 1537445620627373428, guid: bdfffe726cd1ba949b90283b588bfc46, type: 3}
       propertyPath: yOffset
