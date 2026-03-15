@@ -152,18 +152,9 @@ MonoBehaviour:
   isSettings: 0
   canSettings: 1
   canMove: 1
-  fishCollected: 0
   sfxAudio: 0
   musicAudio: 0
-  dummyHit: 0
-  tabiFinished: 0
-  pondEmpty: 0
-  goldenTreeShook: 0
-  ringBroken: 0
-  anvilUsed: 0
-  vertexCrushed: 0
-  ifEyesNotTalked: 0
-  ifObolClaimed: 0
+  playerScene: 0
 --- !u!4 &7637756
 Transform:
   m_ObjectHideFlags: 0
@@ -198,8 +189,8 @@ MonoBehaviour:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 7637755}
-          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
-          m_MethodName: SpawnPlayer
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: PlayerSceneCheck
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1455,7 +1446,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000003940ec5b112f00225153f83445e91d514b7cc43be5a8274b9fc437e3
+  m_ApplyToSortingLayers: 000000003940ec5b112f00225153f83445e91d514b7cc43be5a8274b
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2994,7 +2985,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -482884449
+  m_SortingLayerID: 1260890341
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1138766176
@@ -3084,6 +3075,8 @@ PlayableDirector:
   - key: {fileID: 7155719955343962231, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
     value: {fileID: 1884281830}
   - key: {fileID: -3855491737323850061, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
+    value: {fileID: 2004745302}
+  - key: {fileID: 1426100817123297725, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
     value: {fileID: 2004745302}
   m_ExposedReferences:
     m_References:
@@ -3487,8 +3480,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2004745300}
-        m_TargetAssemblyTypeName: openSceneScript, Assembly-CSharp
-        m_MethodName: skipCutscene
+        m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+        m_MethodName: SkipCutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3741,7 +3734,7 @@ MonoBehaviour:
   m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000009fc437e3
+  m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3918,7 +3911,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1388989685}
-  - component: {fileID: 1388989686}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -3943,18 +3935,6 @@ Transform:
   - {fileID: 956035978}
   m_Father: {fileID: 1220569388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1388989686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388989684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b615872eb0127bb4f95832685923462d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1398925366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,6 +3998,11 @@ MonoBehaviour:
   - groupID: punch
     clips:
     - {fileID: 8300000, guid: 1af5d71add220124b8ac749461f14a17, type: 3}
+  - groupID: deepvoice
+    clips:
+    - {fileID: 8300000, guid: cf3b993264586a44a8bc8cf8617d66d6, type: 3}
+    - {fileID: 8300000, guid: 3911500bc000ec946a7acee115d6b908, type: 3}
+    - {fileID: 8300000, guid: 9c5483c92d06dfd4781651a8148dcdc3, type: 3}
 --- !u!114 &1398925369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5531,6 +5516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   startCutscene: {fileID: 1176525895}
   skipText: {fileID: 1514525759}
+  openingDialogue: {fileID: 11400000, guid: 8d8c9760e937fbb43af0f8b95b263fd0, type: 2}
   player: {fileID: 546835276}
 --- !u!4 &2004745301
 Transform:
@@ -5562,12 +5548,27 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 6789839c95dfbb2449d140124a6c8e45, type: 2}
+    - {fileID: 11400000, guid: 65b912fdd5a943b45a67b3289409b788, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2004745300}
-          m_TargetAssemblyTypeName: openSceneScript, Assembly-CSharp
-          m_MethodName: playerSceneStart
+          m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+          m_MethodName: PlayerSceneStart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2004745300}
+          m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+          m_MethodName: PlayOpeningDialogue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

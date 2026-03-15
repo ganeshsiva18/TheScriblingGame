@@ -25,6 +25,9 @@ public class DialogueManager : MonoBehaviour
     private float currentDelay = 0.075f;
     private char targetToPrint;
 
+    // Current delay and timer to do dialogue
+    private float dialogueVoiceTimer = 0;
+
     // Timers for printing
     private float dialogueTimer = 0;
 
@@ -48,7 +51,9 @@ public class DialogueManager : MonoBehaviour
         if (printDialogue)
         {
             PrintChar();
+            DoDialogueVoice();
             dialogueTimer += Time.unscaledDeltaTime;
+            dialogueVoiceTimer += Time.unscaledDeltaTime;
         } 
     }
     public void DoDialogue(DialogueText text)
@@ -98,6 +103,15 @@ public class DialogueManager : MonoBehaviour
     {
         targetToPrint = dialogueText.dialogue[textNum];
         textNum++;
+    }
+
+    private void DoDialogueVoice()
+    {
+        if (dialogueVoiceTimer >= currentDelay * 4)
+        {
+            SoundManager.Instance.PlaySound2D("deepvoice");
+            dialogueVoiceTimer = 0;
+        }
     }
 
     public IEnumerator ClearDialogueTextAfterSeconds(float seconds)

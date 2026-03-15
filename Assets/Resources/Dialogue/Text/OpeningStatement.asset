@@ -13,10 +13,26 @@ MonoBehaviour:
   m_Name: OpeningStatement
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   title: The Scripter
-  dialogue: Hmmm*... *lets see here*...|*Let me just grab a better light*...~
+  dialogue: "Lets see here*\u2026*|*Ah! Let me go get a zoom lens so you can read
+    it!*|**Oh...* what happened to the pap-|**Oh... alright!!!*|*I know what I can
+    do!*|**That creature has scattered the letters!!!*|*Go find those letters!*|*Conjure!!!~"
   pauses:
-  - 0.5
+  - 0.1
+  - 1
   - 0.075
-  - 0.5
+  - 1
+  - 1
+  - 0.2
   - 0.075
-  - 0.5
+  - 2
+  - 0.075
+  - 1
+  - 0.075
+  - 1
+  - 2
+  - 0.075
+  - 1
+  - 0.075
+  - 1
+  - 0.075
+  waitTimeToExitDialogue: 3

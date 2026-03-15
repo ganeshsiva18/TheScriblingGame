@@ -8,16 +8,14 @@ public class OpenSceneScript: MonoBehaviour
 {
     [SerializeField] private PlayableDirector startCutscene;
     [SerializeField] private TextMeshProUGUI skipText;
+    [SerializeField] private DialogueText openingDialogue;
     [SerializeField] private GameObject player;
     private bool skippable = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GameManager.Instance.canMove = false;
         MusicManager.Instance.PlayMusic("MainMenu", 1);
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (skippable)
@@ -30,27 +28,33 @@ public class OpenSceneScript: MonoBehaviour
         }
     }
 
-    public void playerSceneStart()
+    public void PlayerSceneStart()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void skipCutscene()
+    public void SkipCutscene()
     {
         if (startCutscene.state == PlayState.Playing)
         {
             if (skippable)
             {
-                playerSceneStart();
+                StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
+                PlayerSceneStart();
             }
-            StartCoroutine(startCutsceneSkip());
+            StartCoroutine(StartCutsceneSkip());
         }
     }
         
-    private IEnumerator startCutsceneSkip()
+    private IEnumerator StartCutsceneSkip()
     {
         skippable = true;
         yield return new WaitForSeconds(3);
         skippable = false;
+    }
+
+    public void PlayOpeningDialogue()
+    {
+        DialogueManager.Instance.DoDialogue(openingDialogue);
     }
 }
