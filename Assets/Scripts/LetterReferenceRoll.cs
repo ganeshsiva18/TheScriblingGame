@@ -4,13 +4,6 @@ public class LetterReferenceRoll: MonoBehaviour
 {
     [SerializeField] private Animator animator;
     private bool letterOpen = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void LetterReferenceOpen()
     {
@@ -25,8 +18,8 @@ public class LetterReferenceRoll: MonoBehaviour
     {
         if (letterOpen)
         {
-            animator.SetTrigger("lettersClose");
-            letterOpen = false;
+        animator.SetTrigger("lettersClose");
+        letterOpen = false;
         }
     }
 

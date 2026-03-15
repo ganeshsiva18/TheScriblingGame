@@ -10,6 +10,7 @@ public class PauseManager: MonoBehaviour
     private GameActions gameActions;
 
     [SerializeField] private GameObject settings;
+    [SerializeField] private GameObject letterRef;
     [SerializeField] private AudioMixer audioMixer;
 
     [SerializeField] private Slider sfxSlider;
@@ -37,9 +38,11 @@ public class PauseManager: MonoBehaviour
     }
     private void OpenSettings()
     {
+        letterRef.GetComponent<LetterReferenceRoll>().LetterReferenceClose();
+        letterRef.GetComponent<Animator>().Rebind();
         GameManager.Instance.isSettings = true;
         GameManager.Instance.canMove = false;
-
+        Time.timeScale = 0;
         settings.SetActive(true);
     }
 
@@ -47,7 +50,7 @@ public class PauseManager: MonoBehaviour
     {
         GameManager.Instance.isSettings = false;
         GameManager.Instance.canMove = true;
-
+        Time.timeScale = 1;
         settings.SetActive(false);
     }
 

@@ -106,7 +106,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
             else
             {
                 Destroy(fishes[fishIndex]);
-                LetterManager.Instance.AddLetter(fishCharacters[fishIndex], new Vector2(transform.position.x + Random.Range(-.75f, .25f), transform.position.y + Random.Range(0f, -1f)));
+                LetterManager.Instance.AddLetter(fishCharacters[fishIndex], new Vector2(transform.position.x + Random.Range(-8.5f, -7.5f), transform.position.y + Random.Range(-9f, -8f)));
                 fishes.RemoveAt(fishIndex);
                 fishCharacters.RemoveAt(fishIndex);
             }
