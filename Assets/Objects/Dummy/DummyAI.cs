@@ -35,6 +35,7 @@ public class DummyAI: MonoBehaviour
         SoundManager.Instance.PlaySoundPositional("punch", mousePos, 1, 20);
         if (playerPunch)
         {
+            playerPunch = false;
             QuestionManager.Instance.PopQuestionFromList(2);
             char[] charArray = { 'P', 'O', 'W' };
             LetterManager.Instance.AddLetters(charArray, mousePos);
