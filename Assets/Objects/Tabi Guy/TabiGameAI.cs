@@ -23,7 +23,7 @@ public class TabiGameAI: MonoBehaviour
 
     private void LoadTabiGame()
     {
-        StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
+        DialogueManager.Instance.ClearDialogue();
         gameScreenInstance = Instantiate(gameScreenPrefab, GameObject.FindGameObjectWithTag("Player").transform.position, Quaternion.identity);
         gameScreenInstance.GetComponentInChildren<TabiGameController>().threatThreshold -= timesPlayed;
     }
@@ -92,7 +92,6 @@ public class TabiGameAI: MonoBehaviour
     {
         DialogueManager.Instance.DoDialogue(tabiGuyVoicelines[4]);
         yield return new WaitForSeconds(2);
-        StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
         GameManager.Instance.canMove = true;
         GameManager.Instance.canSettings = true;
     }

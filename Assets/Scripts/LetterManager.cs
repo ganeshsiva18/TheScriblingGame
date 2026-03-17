@@ -46,28 +46,7 @@ public class LetterManager: MonoBehaviour
         Instance = this;
     }
 
-    public void AddLetter(char letter, int letterNumber, Vector2 letterSpawnPos)
-    {
-        if (!lettersFound.Contains(letter))
-        {
-            LetterAnimate(letterSpawnPos, letter);
-            lettersFound.Add(letter);
-            letterReferenceHeadText.text = lettersFound.Count.ToString();
-            letterReferenceLetters[letterNumber-1].SetActive(true);
-        }
-    }
-
-    public void AddLetter(char letter, Vector2 letterSpawnPos)
-    {
-        if (!lettersFound.Contains(letter))
-        {
-            LetterAnimate(letterSpawnPos, letter);
-            lettersFound.Add(letter);
-            letterReferenceHeadText.text = lettersFound.Count.ToString();
-            letterReferenceLetters[charNumPairs[letter]-1].SetActive(true);
-        }
-    }
-
+    // Animate letter object
     public void LetterAnimate(Vector2 spawnPos, char letter)
     {
         Vector2 vel = new Vector2(Random.Range(-3f,3f), Random.Range(0, 5f));
@@ -80,22 +59,40 @@ public class LetterManager: MonoBehaviour
         rb.linearVelocity = vel;
         letterFall.GetComponent<TextMeshPro>().text = letter.ToString();
         Destroy(letterFall, 5f);
+    }
 
+    // Add an array of letters
+    public void AddLetters(char[] chars, Vector2 position)
+    {
+        SoundManager.Instance.PlaySound2D("chaching");
+        for (int i = 0; i < chars.Length; i++) 
+        {
+            AddLetter(chars[i], position);
+        }
+    }
+
+    // Add a single letter
+    public void AddLetter(char letter, Vector2 letterSpawnPos)
+    {
+        if (!lettersFound.Contains(letter))
+        {
+            LetterAnimate(letterSpawnPos, letter);
+            lettersFound.Add(letter);
+            letterReferenceHeadText.text = lettersFound.Count.ToString();
+            letterReferenceLetters[charNumPairs[letter] - 1].SetActive(true);
+            GameEndCheck();
+        }
+    }
+
+    // Check if all letters found
+    private void GameEndCheck()
+    {
         if (lettersFound.Count == 26)
         {
             GameManager.Instance.canSettings = false;
             GameManager.Instance.canMove = false;
             GameManager.Instance.playerScene = false;
             SceneManager.LoadSceneAsync(3);
-        }
-    }
-
-    public void AddLetters(char[] chars, Vector2 position)
-    {
-        SoundManager.Instance.PlaySound2D("chaching");
-        for (int i = 0; i < chars.Length; i++) 
-        {
-            AddLetter(chars[i], charNumPairs[chars[i]], position);
         }
     }
 }

@@ -38,7 +38,7 @@ public class SettingsManager: MonoBehaviour
 
     public void OpenSettings()
     {
-        if (settingsText.IsDestroyed() == false)
+        if (settingsText != null)
         {
             Destroy(settingsText.gameObject);
         }

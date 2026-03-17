@@ -39,7 +39,7 @@ public class OpenSceneScript: MonoBehaviour
         {
             if (skippable)
             {
-                StartCoroutine(DialogueManager.Instance.ClearDialogueTextAfterSeconds(0));
+                DialogueManager.Instance.ClearDialogue();
                 PlayerSceneStart();
             }
             StartCoroutine(StartCutsceneSkip());

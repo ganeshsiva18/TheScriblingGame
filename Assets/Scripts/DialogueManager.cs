@@ -80,7 +80,6 @@ public class DialogueManager : MonoBehaviour
             RaiseSetCharSelected();
             if (targetToPrint == ENDOFTEXT)
             {
-                printDialogue = false;
                 StartCoroutine(ClearDialogueTextAfterSeconds(dialogueText.waitTimeToExitDialogue));
             }
             else if (targetToPrint == ENDOFSTANCE)
@@ -101,8 +100,11 @@ public class DialogueManager : MonoBehaviour
 
     private void RaiseSetCharSelected()
     {
-        targetToPrint = dialogueText.dialogue[textNum];
-        textNum++;
+        if (dialogueText != null)
+        {
+            targetToPrint = dialogueText.dialogue[textNum];
+            textNum++;
+        }
     }
 
     private void DoDialogueVoice()
@@ -116,7 +118,16 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator ClearDialogueTextAfterSeconds(float seconds)
     {
+        printDialogue = false;
+        dialogueText = null;
         yield return new WaitForSecondsRealtime(seconds);
+        ClearDialogue();
+    }
+
+    public void ClearDialogue()
+    {
+        printDialogue = false;
+        dialogueText = null;
         titleAnimator.SetTrigger("textFadeOut");
         dialogueAnimator.SetTrigger("textFadeOut");
     }
