@@ -8,15 +8,18 @@ public class ThreatAI: MonoBehaviour, IPointerClickHandler
     private bool canBeDestroyed = true;
     void Awake()
     {
+        SoundManager.Instance.PlaySound2D("threatWarning");
         tabiGameAI = GameObject.FindGameObjectWithTag("Tabi Game Controller").GetComponent<TabiGameController>();
     }
 
-    public void disableButton()
+    public void DisableButton()
     {
+        SoundManager.Instance.StopSound();
+        SoundManager.Instance.PlaySound2D("punch");
         canBeDestroyed = false;
     }
 
-    public void destroySelf()
+    public void DestroySelf()
     {
         tabiGameAI.SelfDestructThreat();
         Destroy(gameObject);
@@ -26,6 +29,7 @@ public class ThreatAI: MonoBehaviour, IPointerClickHandler
     {
         if (canBeDestroyed)
         {
+            SoundManager.Instance.StopSound();
             tabiGameAI.DestroyThreat(gameObject);
         }
     }

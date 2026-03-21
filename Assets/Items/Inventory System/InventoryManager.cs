@@ -41,6 +41,7 @@ public class InventoryManager: MonoBehaviour
     // Opens the visual inventory
     private void OpenInventory()
     {
+        SoundManager.Instance.PlaySound2D("invOpen");
         for (int i = 0; i < inventoryItems.Count; i++) 
         {
             InstantiateInventoryItem(inventoryItems[i], i);
@@ -55,6 +56,7 @@ public class InventoryManager: MonoBehaviour
     // Closes the visual inventory
     private void CloseInventory()
     {
+        SoundManager.Instance.PlaySound2D("invClose");
         for (int i = inventoryItemsVisual.Count-1; i >= 0; i--)
         {
             Destroy(inventoryItemsVisual[i]);
@@ -65,6 +67,7 @@ public class InventoryManager: MonoBehaviour
     // Adds an item into the inventory
     public void AddInventoryItem(InventoryItem item)
     {
+        SoundManager.Instance.PlaySound2D("itemObtained");
         ObolCheck(item);
         if (newItemAlertInstance == null)
         {

@@ -16,6 +16,7 @@ public class QuestionManager : MonoBehaviour
     }
     public void AskQuestion()
     {
+        SoundManager.Instance.PlaySound2D("questionBell");
         animator.SetTrigger("questionUnreveal");
         if (!hasBeenQuestioned)
         {

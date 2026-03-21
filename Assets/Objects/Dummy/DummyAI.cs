@@ -9,6 +9,7 @@ public class DummyAI: MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private TabiGameAI tabiGameAI;
     private float timer;
+    private bool hasBeenPunched;
 
     void Update()
     {
@@ -33,9 +34,9 @@ public class DummyAI: MonoBehaviour
         Destroy(Instantiate(pow, mousePos, Quaternion.identity), 1f);
         animator.SetTrigger("dummyHit");
         SoundManager.Instance.PlaySoundPositional("punch", mousePos, 1, 20);
-        if (playerPunch)
+        if (!hasBeenPunched)
         {
-            playerPunch = false;
+            hasBeenPunched = true;
             QuestionManager.Instance.PopQuestionFromList(2);
             char[] charArray = { 'P', 'O', 'W' };
             LetterManager.Instance.AddLetters(charArray, mousePos);

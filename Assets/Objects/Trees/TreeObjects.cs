@@ -30,6 +30,7 @@ public class TreeObjects : MonoBehaviour, IPointerDownHandler
         if (eventData.button == PointerEventData.InputButton.Right)
         {
             animator.SetTrigger("shake");
+            SoundManager.Instance.PlaySound2D("treeShake");
             if (isGolden)
             {
                 InventoryManager.Instance.AddInventoryItem(item);

@@ -3078,6 +3078,10 @@ PlayableDirector:
     value: {fileID: 2004745302}
   - key: {fileID: 1426100817123297725, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
     value: {fileID: 2004745302}
+  - key: {fileID: -8199531071980830041, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
+    value: {fileID: 805219658}
+  - key: {fileID: -1538725033798258650, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
+    value: {fileID: 805219658}
   m_ExposedReferences:
     m_References:
     - f95e59f5e2f69b445abc662a82ad595e: {fileID: 0}
@@ -4047,7 +4051,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f5b05724f57004e49abaa21ec9663116, type: 3}
   - groupID: invOpen
     clips:
-    - {fileID: 8300000, guid: f5b05724f57004e49abaa21ec9663116, type: 3}
+    - {fileID: 8300000, guid: ec6a472581e0953468af1bd44e88219f, type: 3}
   - groupID: invClose
     clips:
     - {fileID: 8300000, guid: a00015892704b1645aa3622f55e41534, type: 3}
@@ -4507,7 +4511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.011000001, y: 0.04933333}
   m_AnchorMax: {x: 0.28300002, y: 0.13000001}
-  m_AnchoredPosition: {x: 4.4992676, y: -2}
+  m_AnchoredPosition: {x: 4.4995117, y: -2.000122}
   m_SizeDelta: {x: 9.700012, y: 5.4000244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1602871604

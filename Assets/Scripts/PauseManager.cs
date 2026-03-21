@@ -77,11 +77,11 @@ public class PauseManager: MonoBehaviour
         }
     }
 
-    public void sfxChange(float volume)
+    public void SfxChange(float volume)
     {
         audioMixer.SetFloat("sfxVol", volume);
     }
-    public void musicChange(float volume)
+    public void MusicChange(float volume)
     {
         audioMixer.SetFloat("musicVol", volume);
     }

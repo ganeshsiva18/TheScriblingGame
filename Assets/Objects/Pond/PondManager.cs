@@ -77,6 +77,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
     }
     private void CastLine()
     {
+        SoundManager.Instance.PlaySound2D("fishingLine");
         isFishing = true;
         fishTimer = Random.Range(3f, 10f);
         fishingLineInstance = Instantiate(fishingLine, fishingLineSpawn, Quaternion.identity, parent);
@@ -84,6 +85,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
 
     public void ReelLine()
     {
+        SoundManager.Instance.PlaySound2D("fishingLine");
         isFishing = false;
         fishHooked = false;
         fishingLineInstance.GetComponentInChildren<Animator>().SetTrigger("stopFishing");
@@ -91,6 +93,7 @@ public class PondManager: MonoBehaviour, IPointerDownHandler
     }
     private void CatchFish()
     {
+        SoundManager.Instance.PlaySound2D("fishCaught");
         ReelLine();
         if (fishes.Count > 0)
         { 
