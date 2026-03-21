@@ -29,7 +29,12 @@ public class SoundManager: MonoBehaviour
         }
         sfxSource.PlayOneShot(sfxLibrary.GetClipFromName(soundName));
     }
-  
+
+    public void StopSound()
+    {
+        sfxSource.Stop();
+    }
+
     public void PlaySoundPositional(string soundName, Vector2 position, float minDistance, float maxDistance)
     {
         GameObject tempAudioObj = new("tempAudioObj");
