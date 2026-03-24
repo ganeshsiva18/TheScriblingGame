@@ -34,7 +34,7 @@ public class DummyAI: MonoBehaviour
         Destroy(Instantiate(pow, mousePos, Quaternion.identity), 1f);
         animator.SetTrigger("dummyHit");
         SoundManager.Instance.PlaySoundPositional("punch", mousePos, 1, 20);
-        if (!hasBeenPunched)
+        if (!hasBeenPunched && playerPunch)
         {
             hasBeenPunched = true;
             QuestionManager.Instance.PopQuestionFromList(2);
