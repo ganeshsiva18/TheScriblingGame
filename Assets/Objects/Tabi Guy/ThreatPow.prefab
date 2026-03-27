@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::threatAI
   tabiGameAI: {fileID: 0}
+  parent: {fileID: 7218643627370484493}
 --- !u!58 &7952828799394145765
 CircleCollider2D:
   m_ObjectHideFlags: 0

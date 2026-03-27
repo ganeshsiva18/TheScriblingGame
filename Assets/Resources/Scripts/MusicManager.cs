@@ -21,7 +21,7 @@ public class MusicManager: MonoBehaviour
 
     public void PlayMusic(string trackName, float fadeDuration)
     {
-        StartCoroutine(AnimateMusicCrossfade(musicLibrary.GetClipFromName(trackName), fadeDuration));
+        StartCoroutine(AnimatePlayMusic(musicLibrary.GetClipFromName(trackName), fadeDuration));
     }
 
     public void StopMusic(float fadeDuration)
@@ -40,6 +40,23 @@ public class MusicManager: MonoBehaviour
         }
     }
 
+    IEnumerator AnimatePlayMusic(AudioClip nextTrack, float fadeDuration)
+    {
+        musicSource.clip = nextTrack;
+        musicSource.volume = 0;
+        musicSource.Play();
+
+        float percent = 0;
+        while (percent < 1)
+        {
+            percent += Time.deltaTime / fadeDuration;
+            musicSource.volume = Mathf.Lerp(0, 1f, percent);
+            yield return null;
+        }
+
+        musicSource.volume = 1f;
+    }
+
     IEnumerator AnimateMusicCrossfade(AudioClip nextTrack, float fadeDuration)
     {
         float percent = 0;
@@ -51,14 +68,17 @@ public class MusicManager: MonoBehaviour
         }
 
         musicSource.clip = nextTrack;
+        musicSource.volume = 0;
         musicSource.Play();
 
         percent = 0;
         while (percent < 1)
         {
-            percent += Time.deltaTime * 1 / fadeDuration;
-            musicSource.volume = Mathf.Lerp(0, 1, percent);
+            percent += Time.deltaTime / fadeDuration;
+            musicSource.volume = Mathf.Lerp(0, 1f, percent);
             yield return null;
         }
+
+        musicSource.volume = 1f;
     }
 }

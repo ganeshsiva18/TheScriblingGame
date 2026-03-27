@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class ThreatAI: MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private TabiGameController tabiGameAI;
+    [SerializeField] private GameObject parent;
 
     private bool canBeDestroyed = true;
     void Awake()
@@ -22,7 +23,7 @@ public class ThreatAI: MonoBehaviour, IPointerClickHandler
     public void DestroySelf()
     {
         tabiGameAI.SelfDestructThreat();
-        Destroy(gameObject);
+        Destroy(parent);
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -30,7 +31,7 @@ public class ThreatAI: MonoBehaviour, IPointerClickHandler
         if (canBeDestroyed)
         {
             SoundManager.Instance.StopSound();
-            tabiGameAI.DestroyThreat(gameObject);
+            tabiGameAI.DestroyThreat(parent);
         }
     }
 }

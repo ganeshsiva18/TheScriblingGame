@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.55
+  m_fontSize: 35.25
   m_fontSizeBase: 21.08
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3076,8 +3076,6 @@ PlayableDirector:
     value: {fileID: 1884281830}
   - key: {fileID: -3855491737323850061, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
     value: {fileID: 2004745302}
-  - key: {fileID: 1426100817123297725, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
-    value: {fileID: 2004745302}
   - key: {fileID: -8199531071980830041, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
     value: {fileID: 805219658}
   - key: {fileID: -1538725033798258650, guid: 51c05fb3c09e84e48be60e1af90a8250, type: 2}
@@ -4064,6 +4062,9 @@ MonoBehaviour:
   - groupID: waxCrack
     clips:
     - {fileID: 8300000, guid: 65388b69f32dfae41b1de29ccd132d8a, type: 3}
+  - groupID: finalSceneEnter
+    clips:
+    - {fileID: 8300000, guid: db979169765a1ec49ae966c55c138356, type: 3}
 --- !u!114 &1398925369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4442,7 +4443,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 69.8
+  m_fontSize: 67.4
   m_fontSizeBase: 19.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4511,7 +4512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.011000001, y: 0.04933333}
   m_AnchorMax: {x: 0.28300002, y: 0.13000001}
-  m_AnchoredPosition: {x: 4.4995117, y: -2.000122}
+  m_AnchoredPosition: {x: 4.4995117, y: -2.0002441}
   m_SizeDelta: {x: 9.700012, y: 5.4000244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1602871604

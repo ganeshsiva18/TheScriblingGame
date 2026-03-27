@@ -705,7 +705,7 @@ AnimationClip:
   - time: 1.0833334
     functionName: DestroySelf
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 7218643627370484493, guid: d4b09aab8f76d9b44b65c98316c06692, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

@@ -14,7 +14,7 @@ public class OpenSceneScript: MonoBehaviour
     void Start()
     {
         GameManager.Instance.canMove = false;
-        MusicManager.Instance.PlayMusic("MainMenu", 1);
+        MusicManager.Instance.PlayMusic("MainMenu", 0);
     }
     void Update()
     {

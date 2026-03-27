@@ -6,7 +6,7 @@ public class PlayerSceneManager: MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        MusicManager.Instance.PlayMusic("Player", 5);
+        MusicManager.Instance.PlayMusic("Player", 3);
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.localScale = new Vector3(1.5f, 1.5f, 1f);
         GameManager.Instance.canMove = true;
