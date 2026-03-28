@@ -4013,7 +4013,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 50b5c194c117c1041b2356249970ca4a, type: 3}
   - groupID: paperRustle
     clips:
-    - {fileID: 8300000, guid: 2ee20a41a4dd79f44a0c64a900d3a829, type: 3}
+    - {fileID: 8300000, guid: 1f504caac74cdb94fb538f7e4d09fd88, type: 3}
   - groupID: chaching
     clips:
     - {fileID: 8300000, guid: ac5e29c3f00817e458b99f12c4a2c984, type: 3}
@@ -4031,7 +4031,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 9726ff12e14e7d94fbff6c3510f60ae8, type: 3}
   - groupID: punch
     clips:
-    - {fileID: 8300000, guid: 1af5d71add220124b8ac749461f14a17, type: 3}
+    - {fileID: 8300000, guid: 2b785aeaa477ed84983e2cf18666dfe4, type: 3}
   - groupID: ringBroken
     clips:
     - {fileID: 8300000, guid: d3981ee03f823b24d8581eb6a22bc968, type: 3}
