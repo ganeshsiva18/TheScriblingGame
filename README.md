@@ -6,7 +6,10 @@ The primary goal was not to create a game, but to practice the C# syntax, object
 design patterns, and Git version control. 
 
 ## How do I play?
-The built game is not available on GitHub yet. After the final scene is created, it will be available on itch.io.
+The game can be played [here](https://ganeshsiva18.itch.io/the-scripter)!
+
+Download the game and unzip it, then run the "TheScripter.exe" file!
+For controls, ESC opens settings, and WASD moves the character.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
