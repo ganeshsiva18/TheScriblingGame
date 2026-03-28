@@ -10,29 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8875f9e679b621c40a0bff87b8bfe715, type: 3}
-  m_Name: OpeningStatement
+  m_Name: Starting1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   title: The Scripter
-  dialogue: "Lets see here*\u2026*|*Ah! Let me go get a zoom lens so you can read
-    it!*|**Oh...* what happened to the pap-|**Oh... alright!!!*|*I know what I can
-    do!*|**That creature has scattered the letters!!!*|*Go find those letters!*|*Conjure!!!~"
+  dialogue: '*what happened to the pap-**oh...~'
   pauses:
-  - 0.1
-  - 1
-  - 0.075
-  - 1
-  - 1
+  - 0.03
+  - 1.5
   - 0.2
-  - 0.075
-  - 2
-  - 0.075
-  - 1
-  - 0.075
-  - 1
-  - 2
-  - 0.075
-  - 1
-  - 0.075
-  - 1
-  - 0.075
-  waitTimeToExitDialogue: 3
+  waitTimeToExitDialogue: 0

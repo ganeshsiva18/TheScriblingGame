@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.25
+  m_fontSize: 35.55
   m_fontSizeBase: 21.08
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4443,7 +4443,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.4
+  m_fontSize: 67.95
   m_fontSizeBase: 19.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5570,7 +5570,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   startCutscene: {fileID: 1176525895}
   skipText: {fileID: 1514525759}
-  openingDialogue: {fileID: 11400000, guid: 8d8c9760e937fbb43af0f8b95b263fd0, type: 2}
+  openingDialogues:
+  - {fileID: 11400000, guid: 8d8c9760e937fbb43af0f8b95b263fd0, type: 2}
+  - {fileID: 11400000, guid: 12980799649a7184a8def1f5954078bd, type: 2}
+  - {fileID: 11400000, guid: dde38b84e68d1ae4dba73a3d131efbfe, type: 2}
+  - {fileID: 11400000, guid: 2c2c83dfc757b4f428a30c8b73acf37c, type: 2}
   player: {fileID: 546835276}
 --- !u!4 &2004745301
 Transform:
@@ -5603,6 +5607,9 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 6789839c95dfbb2449d140124a6c8e45, type: 2}
     - {fileID: 11400000, guid: 65b912fdd5a943b45a67b3289409b788, type: 2}
+    - {fileID: 11400000, guid: 3333a69760b05744694693369bac7848, type: 2}
+    - {fileID: 11400000, guid: 9d8475774da54ad4289aa0cb4a9ed58e, type: 2}
+    - {fileID: 11400000, guid: b9b26d526f9594342834c1169b838946, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -5623,11 +5630,53 @@ MonoBehaviour:
         - m_Target: {fileID: 2004745300}
           m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
           m_MethodName: PlayOpeningDialogue
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2004745300}
+          m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+          m_MethodName: PlayOpeningDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2004745300}
+          m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+          m_MethodName: PlayOpeningDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2004745300}
+          m_TargetAssemblyTypeName: OpenSceneScript, Assembly-CSharp
+          m_MethodName: PlayOpeningDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0

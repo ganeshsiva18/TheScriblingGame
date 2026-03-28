@@ -10,15 +10,9 @@ public class Flairer: MonoBehaviour
         StartCoroutine(Flair());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private IEnumerator Flair()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);
     }
 }

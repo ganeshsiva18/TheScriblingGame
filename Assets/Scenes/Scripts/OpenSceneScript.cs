@@ -8,7 +8,7 @@ public class OpenSceneScript: MonoBehaviour
 {
     [SerializeField] private PlayableDirector startCutscene;
     [SerializeField] private TextMeshProUGUI skipText;
-    [SerializeField] private DialogueText openingDialogue;
+    [SerializeField] private DialogueText[] openingDialogues;
     [SerializeField] private GameObject player;
     private bool skippable = false;
     void Start()
@@ -30,7 +30,7 @@ public class OpenSceneScript: MonoBehaviour
 
     public void PlayerSceneStart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadSceneAsync(2);
     }
 
     public void SkipCutscene()
@@ -53,8 +53,8 @@ public class OpenSceneScript: MonoBehaviour
         skippable = false;
     }
 
-    public void PlayOpeningDialogue()
+    public void PlayOpeningDialogue(int index)
     {
-        DialogueManager.Instance.DoDialogue(openingDialogue);
+        DialogueManager.Instance.DoDialogue(openingDialogues[index]);
     }
 }

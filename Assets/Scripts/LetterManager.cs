@@ -95,13 +95,4 @@ public class LetterManager: MonoBehaviour
             SceneManager.LoadSceneAsync(3);
         }
     }
-
-    // DELETE THIS!
-    public void temp()
-    {
-            GameManager.Instance.canSettings = false;
-            GameManager.Instance.canMove = false;
-            GameManager.Instance.playerScene = false;
-            SceneManager.LoadSceneAsync(3);
-    }
 }
