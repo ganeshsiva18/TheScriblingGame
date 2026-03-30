@@ -1,4 +1,4 @@
-# The Scibling Game: A Unity Project
+# The Scribling Game: A Unity Project
 
 ## Description
 Hey there! This is a 2D Top-Down Unity Game where the player explores an environment and completes several unique puzzles. 
